@@ -19,6 +19,7 @@ int	comp(char *w, char *o)
 	while (w[i] == o[i] && w[i])
 		i++;
 	return (w[i] - o[i]);
+	a
 }
 
 int	main()

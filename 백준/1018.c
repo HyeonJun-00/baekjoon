@@ -3,24 +3,24 @@
 
 int	check(char a, char b, int i)
 {
-	int	h;
+	int	j;
 
-	h = 0;
+	j = 0;
 	if (a == 'B')
 	{
 	if (i % 2 == 1 && b != 'W')
-		h++;
+		j++;
 	if (i % 2 != 1 && b != 'B')
-		h++;
+		j++;
 	}
 	if (a == 'W')
 	{
 	if (i % 2 == 1 && b != 'B')
-		h++;
+		j++;
 	if (i % 2 != 1 && b != 'W')
-		h++;
+		j++;
 	}
-	return (h);
+	return (j);
 }
 
 int	main()
@@ -40,7 +40,7 @@ int	main()
 		jj = 0;
 		while (j > jj)
 		{
-			scanf(" %c", &b[ii][jj]);
+			scanf("%c", &b[ii][jj]);
 			jj++;
 		}
 		b[ii][jj] = '\0';

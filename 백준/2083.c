@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int	main()
+{
+	char	name[11];
+	int	num[2];
+
+	while (1)
+	{
+		scanf("%s", name);
+		if (name[0] == '#')
+			return 0;
+		scanf("%d %d", &num[0], &num[1]);
+		if (num[0] > 17 || num[1] > 79)
+			printf("%s Senior\n", name);
+		else
+			printf("%s Junior\n", name);
+	}
+}
